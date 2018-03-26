@@ -29,7 +29,7 @@ function handleDrop(e) {
       var dropElem = this.previousSibling;
       addDnDHandlers(dropElem); 
     }
-    
+    this.classList.remove('dragElem');
     return false;
 }
 
