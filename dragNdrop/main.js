@@ -36,8 +36,7 @@ function handleDrop(e) {
 function addDnDHandlers(elem) {
     elem.addEventListener('dragstart', handleDragStart, false);
     elem.addEventListener('dragover', handleDragOver, false);
-    elem.addEventListener('drop', handleDrop, false);
-    elem.addEventListener('dragend', handleDragEnd, false);
+    elem.addEventListener('drop', handleDrop, false);  
 }
 
 document.addEventListener('DOMContentLoaded', function() {
