@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search your list, you will know it to be true.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background: gainsboro;
+        }
+        .wrapper {
+            width: 20rem;
+            margin-top: 128px; 
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper mx-auto" >
+        
+        <div class="card bg-light" style="width: 18rem;">
+            <div class="card-header">          
+                <form name="search" class="form-group" style="margin-bottom: 0;">
+                    <input type="text" name="search-input" id="search-input" class="form-control" onkeyup="listSearch()" placeholder="Search ...">
+                </form>
+            </div>
+            <ul id="list-container" class="list-group list-group-flush" style="height:350px;overflow-y: scroll;">
+                <li class="list-group-item"><span>Bangladesh</span></li>
+                <li class="list-group-item"><span>China</span></li>
+                <li class="list-group-item"><span>India</span></li>
+                <li class="list-group-item"><span>Indonesia</span></li>
+                <li class="list-group-item"><span>Japan</span></li>
+                <li class="list-group-item"><span>Korea</span></li>
+                <li class="list-group-item"><span>Malaysia</span></li>
+                <li class="list-group-item"><span>Nepal</span></li>
+                <li class="list-group-item"><span>Pakistan</span></li>
+                <li class="list-group-item"><span>Italy</span></li>
+                <li class="list-group-item"><span>Malta</span></li>
+                <li class="list-group-item"><span>Norway</span></li>
+                <li class="list-group-item"><span>Sweden</span></li>
+                <li class="list-group-item"><span>United Kingdom</span></li>
+                <li class="list-group-item"><span>Iceland</span></li>
+                <li class="list-group-item"><span>Israel</span></li>
+                <li class="list-group-item"><span>Turkey</span></li>
+                <li class="list-group-item"><span>North America</span></li>
+                <li class="list-group-item"><span>Mexico</span></li>
+                <li class="list-group-item"><span>United States</span></li>
+                <li class="list-group-item"><span>Canada</span></li>
+                <li class="list-group-item"><span>Oceania</span></li>
+                <li class="list-group-item"><span>Australia</span></li>
+                <li class="list-group-item"><span>New Zealand</span></li>
+                <li class="list-group-item"><span>Argentina</span></li>
+                <li class="list-group-item"><span>Brazil</span></li>
+                <li class="list-group-item"><span>Colombia</span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

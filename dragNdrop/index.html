@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drangon Drop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background: gainsboro;
+        }
+        .wrapper {
+            width: 20rem;
+            margin-top: 128px; 
+        }
+        .list-group-item.dragElem {
+            opacity: 0.4;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper mx-auto" >
+        
+        <div class="card bg-light" style="width: 18rem;">
+            <div class="card-header">          
+                <h4 sytle="">Drag & Drop</h4>
+            </div>
+            <ul id="list-container" class="list-group list-group-flush" style="height:350px;overflow-y: scroll;">
+                <li class="list-group-item" draggable="true"><span>Bangladesh</span></li>
+                <li class="list-group-item" draggable="true"><span>China</span></li>
+                <li class="list-group-item" draggable="true"><span>India</span></li>
+                <li class="list-group-item" draggable="true"><span>Indonesia</span></li>
+                <li class="list-group-item" draggable="true"><span>Japan</span></li>
+                <li class="list-group-item" draggable="true"><span>Korea</span></li>
+                <li class="list-group-item" draggable="true"><span>Malaysia</span></li>
+                <li class="list-group-item" draggable="true"><span>Nepal</span></li>
+                <li class="list-group-item" draggable="true"><span>Pakistan</span></li>
+                <li class="list-group-item" draggable="true"><span>Italy</span></li>
+                <li class="list-group-item" draggable="true"><span>Malta</span></li>
+                <li class="list-group-item" draggable="true"><span>Norway</span></li>
+                <li class="list-group-item" draggable="true"><span>Sweden</span></li>
+                <li class="list-group-item" draggable="true"><span>United Kingdom</span></li>
+                <li class="list-group-item" draggable="true"><span>Iceland</span></li>
+                <li class="list-group-item" draggable="true"><span>Israel</span></li>
+                <li class="list-group-item" draggable="true"><span>Turkey</span></li>
+                <li class="list-group-item" draggable="true"><span>North America</span></li>
+                <li class="list-group-item" draggable="true"><span>Mexico</span></li>
+                <li class="list-group-item" draggable="true"><span>United States</span></li>
+                <li class="list-group-item" draggable="true"><span>Canada</span></li>
+                <li class="list-group-item" draggable="true"><span>Oceania</span></li>
+                <li class="list-group-item" draggable="true"><span>Australia</span></li>
+                <li class="list-group-item" draggable="true"><span>New Zealand</span></li>
+                <li class="list-group-item" draggable="true"><span>Argentina</span></li>
+                <li class="list-group-item" draggable="true"><span>Brazil</span></li>
+                <li class="list-group-item" draggable="true"><span>Colombia</span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
