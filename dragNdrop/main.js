@@ -44,11 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const listContainer = document.getElementById('list-container');
     const listItems = Array.from(listContainer.querySelectorAll('li'));
 
-    // const dragItems = listItems.map(n => {
-    //                     n.setAttribute('draggable', true)
-    //                    
-    //                          return n
-    //                 })
     [].forEach.call(listItems, addDnDHandlers);
 
 })
