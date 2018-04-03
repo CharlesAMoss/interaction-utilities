@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pick a peck of pickled peppers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background: gainsboro;
+        }
+        .wrapper {    
+            margin-top: 128px; 
+        }
+        [class*="col-"] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .disabled {
+            cursor: not-allowed;
+        }
+        #list-container-pickable li {
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="row justify-content-between wrapper" >
+            
+            <div class="card bg-light col-5" >
+                <div class="card-header">          
+                    <h4>pickable</h4>
+                </div>
+                <ul id="list-container-pickable" class="list-group list-group-flush" style="height:350px;overflow-y: scroll;">
+                    <li class="list-group-item" onclick="pick(this)"><span>Bangladesh</span></li>
+                    <li class="list-group-item" onclick="pick(this)"><span>China</span></li>
+                    <li class="list-group-item" onclick="pick(this)"><span>India</span></li>
+                    <li class="list-group-item" onclick="pick(this)"><span>Indonesia</span></li>
+                    <li class="list-group-item" onclick="pick(this)"><span>Japan</span></li>
+                    <li class="list-group-item" onclick="pick(this)"><span>Korea</span></li>
+                    <li class="list-group-item" onclick="pick(this)"><span>Malaysia</span></li>
+                    <li class="list-group-item" onclick="pick(this)"><span>Nepal</span></li>
+                    <li class="list-group-item" onclick="pick(this)"><span>Pakistan</span></li>
+                    <li class="list-group-item" onclick="pick(this)"><span>Italy</span></li>
+                </ul>
+            </div>
+    
+            <div class="card bg-light col-5">
+                <div class="card-header">          
+                    <h4>picked</h4>
+                </div>
+                <ul id="list-container-picked" class="list-group list-group-flush" style="height:350px;overflow-y: scroll;">
+                    
+                </ul>
+            </div>
+    
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

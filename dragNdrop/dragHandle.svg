@@ -1,7 +1,7 @@
 <svg version="1.1"
      baseProfile="full"
      xmlns="http://www.w3.org/2000/svg">
-     <g id="Group" transform="translate(3.000000, 4.000000)" fill="#87909C">
+     <g id="Group" transform="translate(3, 4)" fill="#87909C">
         <rect x="0" y="0" width="2" height="2"/>
         <rect x="5" y="0" width="2" height="2"/>
         <rect x="0" y="6" width="2" height="2"/>
