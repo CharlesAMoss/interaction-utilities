@@ -5,11 +5,19 @@ const Picked = document.getElementById('list-container-picked');
 const PickedItems = Array.from(Picked.querySelectorAll('li'));
 
 function pick(elem) {
-    console.log(elem.firstChild.innerHTML)
-    elem.classList.add("disabled")
-    Picked.appendChild(elem.cloneNode(true))
-    
-
+    let elemContent = elem.firstChild.innerHTML;
+    if(!elem.classList.contains('disabled')) {
+        let removeable = `<li class="list-group-item" onclick="remove(this)"><span>${elemContent}</span></li>`;
+        Picked.insertAdjacentHTML('beforeend', removeable);
+        elem.classList.add("disabled");
+    } else {
+        console.log(`${elemContent} has already been picked`);
+    }
 }
 
-console.log(PickableItems)
+function remove(elem) {
+    Picked.removeChild(elem)
+    //let disabledPick = Pickable.querySelectorAll('li').innerText = elem.firstChild.innerHTML;
+    //console.log(disabledPick)
+    //disabledPick.classList.remove("disabled")
+}

@@ -13,15 +13,19 @@
         .wrapper {    
             margin-top: 128px; 
         }
+      
         [class*="col-"] {
             padding-right: 0;
             padding-left: 0;
         }
-        .disabled {
-            cursor: not-allowed;
-        }
-        #list-container-pickable li {
+      
+        li.list-group-item {
             cursor: pointer;
+        }
+
+         li.list-group-item.disabled {
+            cursor: not-allowed;
+            background-color: rgba(0,0,0,.03);
         }
 
     </style>
