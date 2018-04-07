@@ -7,6 +7,7 @@ _Some example utilities for brower interactions_
 * brower sniffer
 * drag and drop list elements
 * search a list and filter to matching content
+* pick from list add to another and remove it
 * typeahead search ( in progress ) 
 
 ## Setup
