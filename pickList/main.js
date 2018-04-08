@@ -11,9 +11,9 @@ function pick(elem) {
         console.log(`${elemContent} has already been picked`);
         let pickedElem = Array.from(Picked.querySelectorAll('li'))
             .find(el => el.textContent === elem.firstChild.innerHTML);
-        pickedElem.classList.add('list-group-item-info'); 
+        pickedElem.classList.add('list-group-item-secondary'); 
         setTimeout(function(){
-            pickedElem.classList.remove('list-group-item-info');
+            pickedElem.classList.remove('list-group-item-secondary');
         }, 500);
     }
 }
