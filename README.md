@@ -8,13 +8,14 @@ _Some example utilities for brower interactions_
 * drag and drop list elements
 * search a list and filter to matching content
 * pick from list, add it to another and remove it
-* typeahead search ( in progress ) 
+* rss feed reader ( in progress )
+* typeahead search 
 
 ## Setup
 _Clone this repo and open the index.html file in your browsers_
 
 ## Technologies Used
-_Bootstap 4 CDN used in some examples, developed in the Chrome web browser_
+_Bootstap 4 and jQuery CDN used in some examples, developed in the Chrome web browser_
 
 ### Legal
 Copyright (c) 2018 Charles A Moss

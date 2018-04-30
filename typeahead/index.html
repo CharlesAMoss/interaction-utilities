@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>typeahead, party in the back</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background: gainsboro;
+        }
+        .wrapper {
+         
+            margin-top: 128px; 
+        }
+        #suggestions-container {
+            position: relative;
+        }
+        #suggestions {
+            max-height: 180px;
+            overflow-y: scroll;
+            border: 1px solid #b1babf;
+            border-radius: 2px;
+            width: 85%;
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            z-index: 9999; 
+        }
+        #suggestions .list-group-item {
+            border-left-color: transparent;
+        }
+        #suggestions .list-group-item:hover {
+            background: #edeff0;
+            cursor: pointer;
+        }
+        #suggestions .list-group-item:first-child {
+            border-top-color: transparent;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="container wrapper" >
+        
+        <div class="card bg-light" style="width:50%;">
+            <div class="card-header">          
+                Clever Header
+            </div>
+            <div class="card-body">          
+                <form name="typeahead-search">
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="typeahead-input">clever label</label>
+                            <input id="typeahead-input" class="form-control" type="text" placeholder="search"></input>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-secondary" style="margin-top:32px;" onclick="selectInput()">Select</button>
+                        </div>
+                    </div>
+                </form>        
+            </div>
+        
+            <div id="suggestions-container" class="col-md-6 invisible" >
+                <ul id="suggestions" class="list-group">
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

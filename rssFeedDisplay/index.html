@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>view from the RSS feed</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background: gainsboro;
+        }
+        .wrapper {
+            width: 20rem;
+            margin-top: 128px; 
+        }
+    </style>
+</head>
+<body>
+        <div class="wrapper mx-auto" >
+        
+                <div class="card bg-light" style="width: 18rem;">
+                    <div class="card-header">          
+                        <h4>Feed Reader</h4>
+                    </div>
+                    <div class="card-body">          
+                            <div id="feed"></div>
+                    </div>
+                </div>
+        </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
