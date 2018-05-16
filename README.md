@@ -4,7 +4,7 @@
 ## Description
 _Some example utilities for browser interactions_
 
-* brower sniffer
+* browser sniffer
 * drag and drop list elements
 * search a list and filter to matching content
 * pick from list, add it to another and remove it
