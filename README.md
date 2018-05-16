@@ -2,7 +2,7 @@
 ## _3/25/2018_
 
 ## Description
-_Some example utilities for brower interactions_
+_Some example utilities for browser interactions_
 
 * brower sniffer
 * drag and drop list elements
